@@ -1,19 +1,19 @@
 {
-  "name": "moe",
+  "name": "oppa.sh",
   "version": "0.0.1",
-  "main": "index.js",
-  "repository": "https://github.com/CatLover91/moe.git",
+  "main": "app/oppa.js",
+  "repository": "https://github.com/CatLover91/oppa.sh.git",
   "author": "catlover91 <7215827+CatLover91@users.noreply.github.com>",
   "license": "GPLv3",
   "preferGlobal": true,
-  "bin": "./dist/moe.js",
+  "bin": "./dist/oppa.js",
   "standard": {
     "parser": "babel-eslint"
   },
   "scripts": {
     "lint": "standard --verbose app/*.js | snazzy",
-    "build": "webpack --config ./webpack.config.js",
-    "start": "node ./dist/moe.js"
+    "build": "gulp",
+    "start": "node ./dist/oppa.js"
   },
   "dependencies": {
     "commander": "^2.12.2",
