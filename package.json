@@ -1,0 +1,34 @@
+{
+  "name": "moe",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/CatLover91/moe.git",
+  "author": "catlover91 <7215827+CatLover91@users.noreply.github.com>",
+  "license": "GPLv3",
+  "preferGlobal": true,
+  "bin": "./dist/moe.js",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "scripts": {
+    "lint": "standard --verbose app/*.js | snazzy",
+    "build": "webpack --config ./webpack.config.js",
+    "start": "node ./dist/moe.js"
+  },
+  "dependencies": {
+    "commander": "^2.12.2",
+    "inquirer": "^4.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.13.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  }
+}
